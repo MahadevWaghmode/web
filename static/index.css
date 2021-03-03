@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    /* background-image: url("https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+.nav-bar{
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    background-color: rgba(9, 56, 7, 0.918);
+    left: -300px;
+    transition: .5s;
+} 
+
+.nav-bar header{
+    text-align: center;
+    line-height: 70px;
+    background-color: rgba(10, 102, 22, 0.932);
+    font-size: 25px;
+}
+.nav-bar ul{
+    margin: 0;
+    padding: 0;
+}
+.nav-bar li{
+    list-style-type: none;
+    border-bottom: solid 1px rgba(0, 0, 0,.1);
+    /* text-align: center; */
+    padding-left: 115px;
+    transition:all 0.3s ; 
+}
+.nav-bar a{
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 20px 0px;
+    color: white;
+}
+.nav-bar header{
+    color: white;
+}
+.nav-bar li:hover{
+    background-color: rgba(238, 234, 234, 0.075);
+    padding-left: 130px;
+}
+.nav-bar i{
+    padding-right: 10px;
+}
+#check:checked ~ .nav-bar{ 
+    left: 0;
+}
+#check{
+    visibility: hidden;   
+    position: absolute;  
+    /* display: none; */
+}
+#btn,#cancel {
+    position: absolute;
+}
+#btn{
+    left: 20px;
+    top: 20px;
+    padding: 10px;
+    background-color: white;
+    color: green;
+}
+#cancel{
+    top: 10px;
+    left: -35px; 
+    padding: 10px; 
+    color: green;
+    background-color: white;  
+    z-index: 55; 
+    transition:all .5s ease;  
+}
+#check:checked ~ label #btn{
+    opacity: 0;
+}
+#check:checked ~ label #cancel{
+       left: 260px; 
+}
+section{
+    /* background-image: url("https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    background-image: url("https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    height: 100vh; 
+    transition: .5s all; 
+    background-position: center;
+    background-size: cover; 
+}
+
+#check:checked ~ section{
+    margin-left: 300px; 
+}

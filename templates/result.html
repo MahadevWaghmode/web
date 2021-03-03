@@ -1,0 +1,16 @@
+
+    {% extends 'index.html' %}
+    {% block content %}
+    <div class="title2">Result for {{srch}} :</div>
+    {% for res in result %}
+    <div class="block">
+        <div class="icon">
+            <img src="{{res.img}}" alt="">
+        </div>
+        <div class="info">
+            <a href="{{res.link}}"><b>{{res.name}}</b></a><br>
+            <b>Source : {{res.source}}</b>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

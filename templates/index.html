@@ -1,0 +1,33 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="{% static 'result1.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KingQuery</title>
+    <link rel="icon" type = "image/x-icon" href="{% static 'img/icon.png' %}">
+</head>
+
+<body>
+    <form action="search" method="POST">
+        {% csrf_token %}
+        <center>
+    <div class="title1">KingQuery</div>
+        <div class="main" >
+            <input type="text" class="input1" name="box" placeholder="Search.."><br>
+            <button type="submit" class="search-btn" name="submit"><a class="fa fa-search"></a></button> 
+        </div>
+    </center>
+    </form>
+    {% block content%}
+
+
+    {% endblock %}
+
+</body>
+
+</html>
