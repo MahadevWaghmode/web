@@ -1,4 +1,5 @@
-# KingQuery
+#Web
+KingQuery
  
 This Website provides you movies, games and softwares download links 
 quickly
