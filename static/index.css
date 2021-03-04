@@ -5,11 +5,14 @@ body{
     background-repeat: no-repeat;
     background-size: cover; */
 }
+
+
 .nav-bar{
+    top: 20px;
     width: 300px;
     height: 100%;
     position: fixed;
-    background-color: rgba(9, 56, 7, 0.918);
+    background-color: rgba(78, 51, 10, 0.918);
     left: -300px;
     transition: .5s;
 } 
@@ -17,7 +20,7 @@ body{
 .nav-bar header{
     text-align: center;
     line-height: 70px;
-    background-color: rgba(10, 102, 22, 0.932);
+    background-color: rgba(255, 81, 0, 0.932);
     font-size: 25px;
 }
 .nav-bar ul{
@@ -39,11 +42,12 @@ body{
     color: white;
 }
 .nav-bar header{
-    color: white;
+    color: black;
 }
 .nav-bar li:hover{
     background-color: rgba(238, 234, 234, 0.075);
     padding-left: 130px;
+    text-shadow: 2px 2px black;
 }
 .nav-bar i{
     padding-right: 10px;
@@ -61,35 +65,38 @@ body{
 }
 #btn{
     left: 20px;
-    top: 20px;
+    top: 50px;
     padding: 10px;
     background-color: white;
-    color: green;
+    color: rgba(255, 81, 0, 0.932);
 }
 #cancel{
-    top: 10px;
+    top: 30px;
     left: -35px; 
     padding: 10px; 
-    color: green;
+    color: rgba(255, 81, 0, 0.932);
     background-color: white;  
     z-index: 55; 
     transition:all .5s ease;  
+}
+
+#cancel:hover{
+    font-size: 25px;
+    text-shadow: 2px 2px black;
 }
 #check:checked ~ label #btn{
     opacity: 0;
 }
 #check:checked ~ label #cancel{
        left: 260px; 
+
 }
-section{
-    /* background-image: url("https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
-    background-image: url("https://images.pexels.com/photos/160107/pexels-photo-160107.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
-    height: 100vh; 
-    transition: .5s all; 
-    background-position: center;
-    background-size: cover; 
+#check:checked ~ .title2{
+    margin-left: 300px;
 }
 
-#check:checked ~ section{
-    margin-left: 300px; 
+#check:checked ~ .block{
+    margin-left: 305px;
 }
+
+#

@@ -10,9 +10,6 @@
 .main{
     margin-left: 50px;
 }
-body {
-background: url("img/back.jpg"); 
-}
 .input1{
 font-size:17px;
 border-radius:20px;
@@ -42,6 +39,7 @@ padding-left: 20px;
     margin-left: 50px;
     margin-top: 10px;
     font-size: 25px;
+    transition: all 0.5s;
 }
 .info{
     font-weight:bold;
@@ -53,7 +51,7 @@ padding-left: 20px;
     display:block;
     margin-left: 20px;
     margin-top: 20px;
-
+    transition: all 0.5s;
 }
 .block img{
     position:relative;
@@ -77,4 +75,8 @@ padding-left: 20px;
 }
 .info b:hover{
     text-shadow: 2px 1px #ffffff;
+}
+
+body{
+    background: url("img/back.jpg");
 }
